@@ -1,14 +1,14 @@
 function fibonacci(num) {
 // your code here
-	if(num==1){
-		return 1;
+	let zeroth = 0;
+	let first = 1;
+	let second = 0;
+	for(let i = 2;i<=num;i++){
+		second = zeroth+first;
+		zeroth = first;
+		first = second;
 	}
-	if(num==0){
-		return 0;
-	}
-	let first=fibonacci(num-1);
-	let second=fibonacci(num-2);
-	return first+second;
+	return second;
 }
 
 module.exports = fibonacci;
