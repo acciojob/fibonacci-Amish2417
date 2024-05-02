@@ -1,9 +1,9 @@
 function fibonacci(num) {
 // your code here
-	if(num==2){
+	if(num==1){
 		return 1;
 	}
-	if(num==1){
+	if(num==0){
 		return 0;
 	}
 	let first=fibonacci(num-1);
